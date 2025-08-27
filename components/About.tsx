@@ -7,9 +7,9 @@ const About: React.FC = () => {
         <div className="grid md:grid-cols-5 gap-12 items-center">
           <div className="md:col-span-2 max-w-sm mx-auto md:max-w-none xl:max-w-sm xl:mx-auto md:mx-0 mb-12 md:mb-0">
             <img
-              src="https://avatars.githubusercontent.com/u/29260158?s=400&u=a90a20ae003280ea7f18653e194144655e8406bd&v=4"
+              src="/Jairo-koning.jpeg"
               alt="Jairo Koning"
-              className="rounded-full shadow-2xl object-cover w-full h-auto aspect-square"
+              className="rounded-xl shadow-2xl object-cover w-full h-auto aspect-square bg-"
             />
           </div>
           <div className="md:col-span-3">
