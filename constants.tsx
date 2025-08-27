@@ -19,15 +19,15 @@ const LayersIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 export const GITHUB_ICON = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
 );
 
 export const LINKEDIN_ICON = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
 );
 
 export const EXTERNAL_LINK_ICON = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
 );
 
 export const INSTAGRAM_ICON = (props: React.SVGProps<SVGSVGElement>) => (
@@ -49,7 +49,7 @@ export const SERVICES_DATA: Service[] = [
     {
         icon: <CodeIcon className="w-10 h-10 text-brand-beige mb-4" />,
         title: "Landing Pages e Portfólios",
-        description: "Criação de páginas de destino e portfólios visualmente atraentes e otimizados para conversão, destacando sua marca ou perfil profissional."
+        description: "Criação de páginas de serviços, produtos e portfólios visualmente atraentes e otimizados para conversão, destacando sua marca ou perfil profissional."
     },
     {
         icon: <GlobeIcon className="w-10 h-10 text-brand-beige mb-4" />,
@@ -70,35 +70,51 @@ export const SERVICES_DATA: Service[] = [
 
 export const PROJECTS_DATA: Project[] = [
     {
-        imageUrl: "https://picsum.photos/seed/project1/600/400",
-        title: "Sistema de Gestão de Clientes",
-        description: "Uma plataforma SaaS completa para gerenciamento de relacionamento com o cliente (CRM), com funil de vendas, relatórios e automações.",
-        tags: ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
-        liveUrl: "#",
-        repoUrl: "#"
+        imageUrl: "/p-agrowork.jpg",
+        title: "Landig Page para Sistema de Gestão Agricola",
+        description: "Uma plataforma Micro-SaaS completa para gerenciamento agrícola, com recursos de gestão de safras e pedidos.",
+        tags: [],
+        liveUrl: "https://agrowork.com.br",
+        repoUrl: ""
     },
     {
-        imageUrl: "https://picsum.photos/seed/project2/600/400",
-        title: "Catálogo de Produtos Interativo",
-        description: "Site institucional para uma marca de móveis com um catálogo de produtos interativo, permitindo visualização 3D e customização.",
-        tags: ["Next.js", "Three.js", "TypeScript", "Styled Components"],
-        liveUrl: "#",
-        repoUrl: "#"
+        imageUrl: "/p-juridicus.jpg",
+        title: "Site institucional para Escritório de Advocacia",
+        description: "Site institucional para um escritório de advocacia, destacando seus serviços e equipe.",
+        tags: [],
+        liveUrl: "https://juridicusadvocacia.netlify.app",
+        repoUrl: ""
     },
     {
-        imageUrl: "https://picsum.photos/seed/project3/600/400",
-        title: "Landing Page para App Mobile",
-        description: "Página de captura de leads de alta conversão para o lançamento de um novo aplicativo de fitness, integrada com Mailchimp.",
-        tags: ["HTML5", "CSS3", "JavaScript", "GSAP"],
-        liveUrl: "#",
-        repoUrl: "#"
+        imageUrl: "/p-locao-baby.jpg",
+        title: "Site de venda de um produto",
+        description: "Página de captura de leads de alta conversão para o lançamento de um novo produto para bebês.",
+        tags: [],
+        liveUrl: "https://infantilina-locao-baby.vercel.app",
+        repoUrl: ""
     },
     {
-        imageUrl: "https://picsum.photos/seed/project4/600/400",
-        title: "Portfolio para Fotógrafo",
-        description: "Um portfólio minimalista e elegante, focado na exibição de imagens em alta qualidade, com galerias dinâmicas e blog integrado.",
-        tags: ["Gatsby", "GraphQL", "Contentful", "Emotion"],
-        liveUrl: "#",
-        repoUrl: "#"
+        imageUrl: "/p-melado-artesanal.jpg",
+        title: "Página de vendas para produto artesanal",
+        description: "Página de vendas para um alimento artesanal, com design focado em conversão e experiência do usuário.",
+        tags: [],
+        liveUrl: "https://melado-artesanal.vercel.app",
+        repoUrl: ""
+    },
+    {
+        imageUrl: "/p-orthosorriso.jpg",
+        title: "Site institucional para Clínica Odontológica",
+        description: "Site institucional para uma clínica odontológica, apresentando seus serviços e equipe.",
+        tags: [],
+        liveUrl: "https://orthosorriso.netlify.app",
+        repoUrl: ""
+    },
+    {
+        imageUrl: "/p-arte-cor.jpg",
+        title: "Landing Page para divulgação de serviços de pintura",
+        description: "Página de divulgação de serviços de pintura residencial e comercial, com foco em captação de leads.",
+        tags: [],
+        liveUrl: "https://artecor.netlify.app",
+        repoUrl: ""
     }
 ];

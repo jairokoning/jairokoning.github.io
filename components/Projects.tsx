@@ -15,10 +15,10 @@ const Projects: React.FC = () => {
           {PROJECTS_DATA.map((project, index) => (
             <div key={index} className="bg-brand-brown/10 rounded-lg overflow-hidden group transition-all duration-300 shadow-lg hover:shadow-2xl">
               <div className="relative overflow-hidden">
-                <img 
-                    src={project.imageUrl} 
-                    alt={project.title} 
-                    className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                <img
+                  src={project.imageUrl}
+                  alt={project.title}
+                  className="w-full h-100 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
                   {project.liveUrl && (
