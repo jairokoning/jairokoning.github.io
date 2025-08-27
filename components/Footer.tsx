@@ -6,17 +6,17 @@ const Footer: React.FC = () => {
         <footer className="bg-brand-dark border-t border-brand-brown/20 py-8">
             <div className="container mx-auto px-6 text-center text-brand-beige/60">
                 <div className="flex justify-center space-x-6 mb-4">
-                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-brand-beige transition-colors">
-                        <GITHUB_ICON className="w-6 h-6" />
+                    <a href="https://wa.me/5545998212838" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="hover:text-brand-beige transition-colors">
+                        <WHATSAPP_ICON className="w-6 h-6" />
                     </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-brand-beige transition-colors">
+                    <a href="https://www.linkedin.com/in/jairokoning/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-brand-beige transition-colors">
                         <LINKEDIN_ICON className="w-6 h-6" />
                     </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-brand-beige transition-colors">
+                    <a href="https://instagram.com/jairokoning" target="_blank" aria-label="Instagram" className="hover:text-brand-beige transition-colors">
                         <INSTAGRAM_ICON className="w-6 h-6" />
                     </a>
-                    <a href="https://wa.me/5511998202235" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="hover:text-brand-beige transition-colors">
-                        <WHATSAPP_ICON className="w-6 h-6" />
+                    <a href="https://github.com/jairokoning" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-brand-beige transition-colors">
+                        <GITHUB_ICON className="w-6 h-6" />
                     </a>
                 </div>
                 <p className="text-sm">
