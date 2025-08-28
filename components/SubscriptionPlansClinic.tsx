@@ -11,7 +11,7 @@ interface Plan {
   yearlyCost: string;
 }
 
-const SubscriptionPlans: React.FC = () => {
+const SubscriptionPlansClinic: React.FC = () => {
   const plans: Plan[] = [
     {
       id: 'essencial',
@@ -26,7 +26,7 @@ const SubscriptionPlans: React.FC = () => {
       ],
       setupCost: 'R$ 1.200',
       monthlyCost: 'R$ 99/mês',
-      yearlyCost: 'R$ 990/ano' // 10% discount
+      yearlyCost: 'R$ 990/ano (10% de desconto)' // 10% discount
     },
     {
       id: 'pro',
@@ -43,7 +43,7 @@ const SubscriptionPlans: React.FC = () => {
       ],
       setupCost: 'R$ 2.200',
       monthlyCost: 'R$ 199/mês',
-      yearlyCost: 'R$ 1.990/ano' // 10% discount
+      yearlyCost: 'R$ 1.990/ano (10% de desconto)' // 10% discount
     },
     {
       id: 'premium',
@@ -57,11 +57,12 @@ const SubscriptionPlans: React.FC = () => {
         'WhatsApp com mensagens customizadas',
         'Formulário de contato (via e-mail)',
         'SEO',
+        'Catálogo de serviços/produtos',
         'Integrações avançadas (Agendamento online, Pagamento Online)'
       ],
       setupCost: 'R$ 3.500',
       monthlyCost: 'R$ 299/mês',
-      yearlyCost: 'R$ 2.990/ano' // 10% discount
+      yearlyCost: 'R$ 2.990/ano (10% de desconto)' // 10% discount
     }
   ];
 
@@ -69,9 +70,9 @@ const SubscriptionPlans: React.FC = () => {
     <div className="min-h-screen bg-brand-dark text-brand-beige py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">Planos de Assinatura para Clínicas Odontológicas</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">Planos de Assinatura para Clínicas</h1>
           <p className="text-lg text-brand-beige/80 max-w-3xl mx-auto">
-            Soluções digitais completas para sua clínica odontológica. Escolha o plano que melhor se adapta às necessidades da sua clínica.
+            Soluções digitais completas para sua Clínica. Escolha o plano que melhor se adapta às necessidades da sua empresa.
           </p>
         </div>
 
@@ -79,7 +80,10 @@ const SubscriptionPlans: React.FC = () => {
           {plans.map((plan) => (
             <div
               key={plan.id}
-              className="bg-brand-dark border border-brand-beige/20 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className={`bg-brand-dark rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ${plan.id === 'pro'
+                ? 'border-4 border-blue-400 ring-2 ring-blue-400/20 shadow-blue-400/20'
+                : 'border border-brand-beige/20'
+                }`}
             >
               <div className="p-6">
                 <h2 className="text-2xl font-bold mb-2">{plan.name}</h2>
@@ -121,4 +125,4 @@ const SubscriptionPlans: React.FC = () => {
   );
 };
 
-export default SubscriptionPlans;
+export default SubscriptionPlansClinic;

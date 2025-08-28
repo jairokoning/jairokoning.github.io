@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
-import SubscriptionPlans from './components/SubscriptionPlans';
+import SubscriptionPlansClinic from './components/SubscriptionPlansClinic';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -15,7 +15,7 @@ root.render(
     <HashRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/planos-assinatura" element={<SubscriptionPlans />} />
+        <Route path="/planos-assinatura-clinicas" element={<SubscriptionPlansClinic />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>
